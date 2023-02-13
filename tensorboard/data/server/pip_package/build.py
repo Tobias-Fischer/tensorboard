@@ -100,7 +100,7 @@ def main():
 
     os.chdir(tmpdir)
     subprocess.run(
-        [sys.executable, "setup.py", "bdist_wheel", "-p", platform_tag],
+        [sys.executable, "setup.py", "bdist_wheel"],
         stdout=sys.stderr,
         check=True,
     )
